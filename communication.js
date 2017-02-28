@@ -27,7 +27,7 @@ let cmd = (command, args, cwd, successRetVal = [0]) => {
       console.log(`child process exited with code ${code}`);
       if (!successRetVal.includes(code)) {
         let arrEInfo = errInfo.join('\n');
-        reject(new Error({'code': code, 'message': arrEInfo}));
+        reject({'code': code, 'message': arrEInfo});
       } else {
         resolve(outInfo);
       }
