@@ -1,0 +1,10 @@
+{
+  "name": "dev-server-agent",
+  "main": "./index",
+  "version": "0.0.1",
+  "description": "dev server agent",
+  "lisence": "MIT",
+  "dependencies": {
+    "iconv-lite": "^0.4.15",
+  }
+}
